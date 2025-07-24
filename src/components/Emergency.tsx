@@ -110,7 +110,7 @@ const Emergency = () => {
               <div className="space-y-4">
                 <div className="flex items-center justify-between p-4 bg-gradient-to-r from-white/10 to-white/5 rounded-lg border border-white/20">
                   <span className="text-white/90">Average Response Time</span>
-                  <span className="text-[#1C4E80] font-bold">< 15 minutes</span>
+                  <span className="text-[#1C4E80] font-bold">{"< 15 minutes"}</span>
                 </div>
                 <div className="flex items-center justify-between p-4 bg-gradient-to-r from-white/10 to-white/5 rounded-lg border border-white/20">
                   <span className="text-white/90">Coverage</span>
