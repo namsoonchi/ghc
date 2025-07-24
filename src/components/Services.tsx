@@ -36,16 +36,19 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-br from-[#F3F3F3] via-[#E0E0E0] to-[#00ACC1]/5 relative overflow-hidden">
-      {/* Background Shapes */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-[#7CB342]/10 to-transparent rounded-full -translate-y-48 -translate-x-48"></div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-tl from-[#00ACC1]/15 to-transparent rounded-full translate-y-32 translate-x-32"></div>
+    <section id="services" className="py-20 bg-gradient-to-br from-[#F3F3F3] via-[#E0E0E0] to-[#00ACC1]/10 relative overflow-hidden">
+      {/* Geometric Shapes */}
+      <div className="absolute bottom-0 left-0 right-0 h-64">
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-r from-[#00ACC1] to-[#00796B] transform -skew-y-2 origin-bottom-left"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-[#7CB342] transform -skew-y-1 origin-bottom-right"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-[#1C4E80] transform skew-y-1 origin-bottom-left"></div>
+      </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#1C4E80] mb-6">
-            Our <span className="text-[#33691E]">Services</span>
+          <h2 className="text-5xl lg:text-6xl font-bold text-[#1C4E80] mb-6 leading-tight">
+            OUR <span className="block text-[#33691E]">SERVICES</span>
           </h2>
           <p className="text-lg text-[#1C4E80] max-w-3xl mx-auto leading-relaxed">
             We provide comprehensive home health aide services designed to support independence, 
@@ -84,19 +87,27 @@ const Services = () => {
 
         {/* CTA Section */}
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-[#00ACC1] to-[#00796B] rounded-2xl p-8 md:p-12">
-            <h3 className="text-3xl font-bold text-white mb-4">
+          <div className="bg-gradient-to-br from-[#F3F3F3]/90 via-[#E0E0E0]/90 to-[#00ACC1]/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-2xl border border-[#00ACC1]/30">
+            <h3 className="text-3xl font-bold text-[#1C4E80] mb-4">
               Ready to Get Started?
             </h3>
-            <p className="text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[#1C4E80] mb-8 max-w-2xl mx-auto leading-relaxed">
               Contact us today for a free consultation and learn how our professional home health aide services can help you or your loved one.
             </p>
-            <button
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-gradient-to-r from-[#F3F3F3] to-[#E0E0E0] text-[#1C4E80] px-8 py-4 rounded-full hover:from-[#E0E0E0] hover:to-[#F3F3F3] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 border border-[#00ACC1]/30"
-            >
-              Schedule Consultation
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-[#7CB342] text-white px-8 py-4 rounded-full hover:bg-[#33691E] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                Schedule Consultation
+              </button>
+              <button
+                onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                className="border-2 border-[#1C4E80] text-[#1C4E80] px-8 py-4 rounded-full hover:bg-[#1C4E80] hover:text-white transition-all duration-300 font-semibold text-lg"
+              >
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
       </div>

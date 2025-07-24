@@ -59,17 +59,19 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-[#E0E0E0] via-[#F3F3F3] to-[#00ACC1]/8 relative overflow-hidden">
-      {/* Background Shapes */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-[#00ACC1]/25 to-[#00796B]/15 rounded-full -translate-y-48 -translate-x-48"></div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-tl from-[#7CB342]/25 to-[#33691E]/15 rounded-full translate-y-32 translate-x-32"></div>
-      <div className="absolute top-1/4 right-1/4 w-40 h-40 bg-gradient-to-br from-[#7CB342]/10 to-[#00ACC1]/10 rounded-full"></div>
+    <section id="contact" className="py-20 bg-gradient-to-br from-[#F3F3F3] via-[#E0E0E0] to-[#00ACC1]/10 relative overflow-hidden">
+      {/* Geometric Shapes */}
+      <div className="absolute bottom-0 left-0 right-0 h-64">
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-r from-[#00ACC1] to-[#00796B] transform -skew-y-2 origin-bottom-left"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-[#7CB342] transform -skew-y-1 origin-bottom-right"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-[#1C4E80] transform skew-y-1 origin-bottom-left"></div>
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#1C4E80] mb-6">
-            Get In <span className="text-[#33691E]">Touch</span>
+          <h2 className="text-5xl lg:text-6xl font-bold text-[#1C4E80] mb-6 leading-tight">
+            GET IN <span className="block text-[#33691E]">TOUCH</span>
           </h2>
           <p className="text-lg text-[#1C4E80] max-w-3xl mx-auto leading-relaxed">
             Ready to learn more about our home health aide services? Contact us today for a free consultation and discover how we can help you or your loved one.
@@ -202,7 +204,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#7CB342] text-white px-8 py-4 rounded-lg hover:bg-[#33691E] transition-all duration-300 font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="w-full bg-[#7CB342] text-white px-8 py-4 rounded-full hover:bg-[#33691E] transition-all duration-300 font-semibold text-lg flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <Send className="w-5 h-5" />
                   <span>Send Message</span>
