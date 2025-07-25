@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section id="why-choose-us" className="py-20 bg-gradient-to-br from-[#1C4E80] via-[#00796B] to-[#1C4E80] relative overflow-hidden">
+    <section id="why-choose-us" className="py-20 bg-gradient-to-br from-[#1C4E80]/90 via-[#00796B]/90 to-[#1C4E80]/90 relative overflow-hidden">
       {/* Layered Background Shapes - matching the image design */}
       <div className="absolute inset-0">
         {/* Bottom layer - darkest blue */}
