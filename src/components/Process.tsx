@@ -30,7 +30,7 @@ const Process = () => {
   ];
 
   return (
-    <section id="process" className="py-20 bg-gradient-to-br from-[#00ACC1] via-[#00796B] to-[#7CB342] relative overflow-hidden">
+    <section id="process" className="py-20 bg-gradient-to-br from-[#00ACC1]/90 via-[#00796B]/90 to-[#7CB342]/90 relative overflow-hidden">
       {/* Layered Background Shapes */}
       <div className="absolute inset-0">
         {/* Bottom flowing layer */}
